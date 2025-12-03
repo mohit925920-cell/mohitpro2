@@ -1,0 +1,250 @@
+@font-face {
+    font-family: ver;
+    src: url(Varien.ttf);
+}
+@font-face {
+    font-family: jour;
+    src: url(journey.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    font-weight: 100vw;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0B0B0B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    height: 600px;
+    background: #121212;
+    border-radius: 20px;
+    border: 2px solid #1f1f1f;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(225,140,0,0.15);
+
+}
+
+.left-section{
+    width: 50%;
+    background-image: url(Conference\ Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.overlay-text{
+    position: absolute;
+    bottom: 48px;
+    right: 70px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: ver;
+    right: 50px;
+    color: #fff;
+
+}
+
+.right-section{
+    width: 50%;
+    padding: 40px 45px;
+}
+
+h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff8800;
+    font-family:sans-serif;
+}
+.switch{
+   font-size: 14px;
+   color: #C5C5C5;
+}
+.switch a {
+    color: #FF7A00;
+    text-decoration: none;
+}
+form input{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #242424;
+    color: white;
+    font-size: 15px;
+}
+.input-group{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+   
+}
+
+
+
+.checkbox span{
+    white-space: nowrap;
+    
+}
+.checkbox a{
+    color:  #FF7A00;
+    text-decoration: none;
+    
+}
+.btn-primary{
+    width: 100%;
+    padding: 15px;
+    background: #FF7A00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover{
+    background-color: #ff8f24;
+}
+.btn-primary:active{
+    transform: scale(0.97);
+}
+.divider{
+   display: flex;
+   align-items: center;
+   margin: 20px 0;
+   width: 100%;
+   color: #bbb;
+   font-size: 14px;
+}
+.divider::before,
+.divider::after{
+    content: "";
+    flex: 1;
+    height: 1.5px;
+    background: #333;
+}
+
+.divider span{
+    margin: 0 10px;
+    white-space: nowrap;
+}
+.social-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    
+}
+
+.google{
+    width: 70%;
+    
+    padding: 12px;
+    background: #242424;
+    border: 2px solid #333;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+}
+
+
+
+.google:hover{
+    background: #333;
+}
+
+.google:active{
+    transform: scale(0.96);
+}
+
+
+/* Login page styiling */
+
+.login-page .overlay-text{
+    position: absolute;
+    bottom: 30px;
+    right: 122px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ff8800;
+
+}
+.login-page h2{
+    font-size: 30px;
+    color: #ff8800;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.login-page .subtitle{
+    color: #c9c9c9;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login-page input{
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 2px solid #2c2c2c;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: white;
+    outline: none;
+    transition: 0.3s ease;
+}
+.login-page input:focus{
+    border-color: #ff7b00;
+}
+
+.login-page .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.login-page .checkbox input[type="checkbox"]{
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+.login-page .signup-link{
+    text-align: center;
+    color: #cfcfcf;
+    margin-top: 20px;
+}
+.login-page .signup-link a{
+    color: #ff8800;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-page .signup-link a:hover{
+    text-decoration: underline;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
